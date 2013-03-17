@@ -7,4 +7,4 @@ For details please refer to:
 http://corgitoergosum.net/?p=1296
 
 Demo:
-[[vimeo-61983299-500x450]]
+[vimeo-61983299-500x450]
