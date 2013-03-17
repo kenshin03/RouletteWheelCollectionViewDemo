@@ -6,6 +6,11 @@ Demo of a custom UICollectionViewFlowLayout subclass implementation of a roulett
 For details please refer to:
 http://corgitoergosum.net/?p=1296
 
+License
+---
+MIT (https://github.com/kenshin03/RouletteWheelCollectionViewDemo/blob/master/LICENSE)
+
+
 Screenshot
 ---
 ![Screenshot](RouletteViewDemo/roulettewheel_demo_image.jpg)
