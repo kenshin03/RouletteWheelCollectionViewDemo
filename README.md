@@ -5,3 +5,6 @@ Demo of a custom UICollectionViewFlowLayout subclass implementation of a roulett
 
 For details please refer to:
 http://corgitoergosum.net/?p=1296
+
+Demo:
+https://vimeo.com/61983299
