@@ -8,7 +8,7 @@ http://corgitoergosum.net/?p=1296
 
 Screenshot
 ---
-![Screenshot](roulettewheel_demo_image.jpg)
+![Screenshot](RouletteViewDemo/roulettewheel_demo_image.jpg)
 
 
 [Vimeo Video](https://vimeo.com/61983299 "Vimeo Video")
