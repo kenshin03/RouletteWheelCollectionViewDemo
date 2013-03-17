@@ -6,6 +6,10 @@ Demo of a custom UICollectionViewFlowLayout subclass implementation of a roulett
 For details please refer to:
 http://corgitoergosum.net/?p=1296
 
+Screenshot
+---
+![Screenshot](roulettewheel_demo_image.jpg)
+
 
 [Vimeo Video](https://vimeo.com/61983299 "Vimeo Video")
 
@@ -48,3 +52,7 @@ DemoViewController.m:
 }
 
 ```
+
+Attribution
+---
+The card images are works of yozzo from DeviantArts - http://yozzo.deviantart.com/
