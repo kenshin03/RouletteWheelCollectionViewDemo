@@ -10,7 +10,7 @@
 #import "RVCollectionViewCell.h"
 #import "RVCollectionViewLayout.h"
 
-@interface RVViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface RVViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
 @property (nonatomic, strong) NSMutableArray * imagesArray;
@@ -30,6 +30,7 @@
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.collectionView.delegate = self;
     
     self.collectionViewLayout = [[RVCollectionViewLayout alloc] init];
     self.collectionViewLayout.superView = self.view;
@@ -53,7 +54,13 @@
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    // implement your cell selected logic here
+    UIImageView * selectedImageView = self.imagesArray[indexPath.item];
+    NSLog(@"selected image: %@", selectedImageView);
+}
 
 
 
