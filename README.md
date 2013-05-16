@@ -13,7 +13,7 @@ MIT (https://github.com/kenshin03/RouletteWheelCollectionViewDemo/blob/master/LI
 
 Screenshot
 ---
-![Screenshot](RouletteViewDemo/roulettewheel_demo_image.jpg)
+![Screenshot](RouletteViewDemo/wheel.gif)
 
 
 [Vimeo Video](https://vimeo.com/61983299 "Vimeo Video")
