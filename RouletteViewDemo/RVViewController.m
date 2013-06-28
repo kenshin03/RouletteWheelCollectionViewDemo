@@ -30,11 +30,6 @@
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.collectionView.delegate = self;
-    
-    self.collectionViewLayout = [[RVCollectionViewLayout alloc] init];
-    self.collectionViewLayout.superView = self.view;
-    [self.collectionView setCollectionViewLayout:self.collectionViewLayout];
 }
 
 #pragma mark - UICollectionViewDataSource

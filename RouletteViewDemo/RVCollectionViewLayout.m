@@ -23,6 +23,19 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.itemSize = CGSizeMake(100.0f, 153.0f);
+        self.sectionInset = UIEdgeInsetsMake(0, 60, 0, 60);
+        self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    }
+    return self;
+}
+
+- (void)prepareLayout {
+    self.superView = self.collectionView.superview;
+}
 /**
 This method is called by UICollectionView for laying out cells in the visible rect.
  */
