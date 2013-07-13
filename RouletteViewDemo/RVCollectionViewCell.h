@@ -10,6 +10,7 @@
 
 @interface RVCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) NSString * imageName;
 @property (nonatomic, strong) UIImageView * imageView;
 
 @end

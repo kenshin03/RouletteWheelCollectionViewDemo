@@ -14,6 +14,7 @@
 
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
 @property (nonatomic, strong) NSMutableArray * imagesArray;
+@property (nonatomic, strong) NSMutableArray * imageNamesArray;
 @property (nonatomic, strong) RVCollectionViewLayout * collectionViewLayout;
 
 @end
@@ -46,6 +47,7 @@
 {
     RVCollectionViewCell *cell = (RVCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"ItemIdentifier" forIndexPath:indexPath];
     cell.imageView = self.imagesArray[indexPath.item];
+    cell.imageName = self.imageNamesArray[indexPath.item];
     return cell;
 }
 
@@ -57,11 +59,29 @@
     NSLog(@"selected image: %@", selectedImageView);
 }
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSLog(@"scrollViewDidEndDecelerating...");
+    [self printCurrentCard];
+}
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (!decelerate){
+        NSLog(@"scrollViewDidEndDragging...");
+        [self printCurrentCard];
+    }
+}
+
+- (void)printCurrentCard{
+    NSArray * visibleCards = self.collectionView.visibleCells;
+    [visibleCards enumerateObjectsUsingBlock:^(RVCollectionViewCell * visibleCell, NSUInteger idx, BOOL *stop) {
+        NSLog(@"visible cell: %@", visibleCell.imageName);
+    }];
+}
 
 
 - (void) initImages {
     self.imagesArray = [NSMutableArray array];
+    self.imageNamesArray = [NSMutableArray array];
     
     UIImageView * image1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2"]];
     UIImageView * image2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3"]];
@@ -96,39 +116,71 @@
     UIImageView * image31 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"6"]];
     
     [self.imagesArray addObject:image1];
+    self.imageNamesArray[0] = @"2";
     [self.imagesArray addObject:image2];
+    self.imageNamesArray[1] = @"3";
     [self.imagesArray addObject:image3];
+    self.imageNamesArray[2] = @"4";
     [self.imagesArray addObject:image4];
+    self.imageNamesArray[3] = @"5";
     [self.imagesArray addObject:image5];
+    self.imageNamesArray[4] = @"6";
     [self.imagesArray addObject:image6];
+    self.imageNamesArray[5] = @"7";
     [self.imagesArray addObject:image7];
+    self.imageNamesArray[6] = @"8";
     [self.imagesArray addObject:image8];
+    self.imageNamesArray[7] = @"9";
     [self.imagesArray addObject:image9];
+    self.imageNamesArray[8] = @"10";
     [self.imagesArray addObject:image10];
+    self.imageNamesArray[9] = @"11";
     [self.imagesArray addObject:image11];
+    self.imageNamesArray[10] = @"12";
     [self.imagesArray addObject:image12];
+    self.imageNamesArray[11] = @"13";
     [self.imagesArray addObject:image13];
+    self.imageNamesArray[12] = @"14";
     [self.imagesArray addObject:image14];
+    self.imageNamesArray[13] = @"2";
     [self.imagesArray addObject:image15];
+    self.imageNamesArray[14] = @"3";
     [self.imagesArray addObject:image16];
+    self.imageNamesArray[15] = @"4";
     [self.imagesArray addObject:image17];
+    self.imageNamesArray[16] = @"5";
     [self.imagesArray addObject:image18];
+    self.imageNamesArray[17] = @"6";
     [self.imagesArray addObject:image19];
+    self.imageNamesArray[18] = @"7";
     [self.imagesArray addObject:image20];
+    self.imageNamesArray[19] = @"8";
     [self.imagesArray addObject:image21];
+    self.imageNamesArray[20] = @"9";
     [self.imagesArray addObject:image22];
+    self.imageNamesArray[21] = @"10";
     [self.imagesArray addObject:image23];
+    self.imageNamesArray[22] = @"11";
     [self.imagesArray addObject:image24];
+    self.imageNamesArray[23] = @"12";
     [self.imagesArray addObject:image25];
+    self.imageNamesArray[24] = @"13";
     [self.imagesArray addObject:image26];
+    self.imageNamesArray[25] = @"14";
     [self.imagesArray addObject:image27];
+    self.imageNamesArray[26] = @"2";
     [self.imagesArray addObject:image28];
+    self.imageNamesArray[27] = @"3";
     [self.imagesArray addObject:image29];
+    self.imageNamesArray[28] = @"4";
     [self.imagesArray addObject:image30];
+    self.imageNamesArray[29] = @"5";
     [self.imagesArray addObject:image31];
+    self.imageNamesArray[30] = @"6";
     
     
 }
 
 
 @end
+
