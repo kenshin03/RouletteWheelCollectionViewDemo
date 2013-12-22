@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/kenshin03/RouletteWheelCollectionViewDemo'
   s.author   = { 'Kenny Tang' => 'https://github.com/kenshin03' }
   s.source   = { :git => 'https://github.com/kenshin03/RouletteWheelCollectionViewDemo.git', :tag => '0.0.1' }
-  s.source_files = 'RouletteViewDemo/**/*.{h,m}'
+  s.source_files = 'RouletteViewDemo/**/RVCollectionViewLayout.{h,m}','RouletteViewDemo/**/RVColletionViewCell.{h,m}'
   s.requires_arc = true
   s.frameworks   = 'CoreGraphics'
   s.resources    = 'RouletteViewDemo/**/*.{png,xib}'
