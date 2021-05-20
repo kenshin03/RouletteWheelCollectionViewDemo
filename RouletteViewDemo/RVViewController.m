@@ -10,9 +10,11 @@
 #import "RVCollectionViewCell.h"
 #import "RVCollectionViewLayout.h"
 
+
+
 @interface RVViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 
-@property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
+@property (nonatomic, weak)  UICollectionView * collectionView;
 @property (nonatomic, strong) NSMutableArray * imagesArray;
 @property (nonatomic, strong) NSMutableArray * imageNamesArray;
 @property (nonatomic, strong) RVCollectionViewLayout * collectionViewLayout;
@@ -25,12 +27,27 @@
 {
     [super viewDidLoad];
     [self initImages];
+    [self initCollectionView];
     
     [self.collectionView registerClass:[RVCollectionViewCell class] forCellWithReuseIdentifier:@"ItemIdentifier"];
     self.collectionView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+}
+
+- (void)initCollectionView {
+    CGRect rect=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 230);
+     _collectionViewLayout = [[RVCollectionViewLayout alloc] init];
+    
+    UICollectionView *collectionView=[[UICollectionView alloc] initWithFrame:rect collectionViewLayout:_collectionViewLayout];
+    collectionView.alwaysBounceHorizontal = YES;
+    collectionView.showsHorizontalScrollIndicator = NO;
+    collectionView.backgroundColor =[UIColor clearColor];
+    collectionView.dataSource=self;
+    collectionView.delegate=self;
+    [self.view addSubview:collectionView];
+    self.collectionView=collectionView;
 }
 
 #pragma mark - UICollectionViewDataSource
