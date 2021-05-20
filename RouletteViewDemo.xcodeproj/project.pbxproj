@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BDE14772656580A0063D824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE14762656580A0063D824 /* Assets.xcassets */; };
 		8EC103B516F270F700BAC998 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC103B416F270F700BAC998 /* UIKit.framework */; };
 		8EC103B716F270F700BAC998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC103B616F270F700BAC998 /* Foundation.framework */; };
 		8EC103B916F270F700BAC998 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC103B816F270F700BAC998 /* CoreGraphics.framework */; };
@@ -17,7 +18,6 @@
 		8EC103C916F270F700BAC998 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC103C816F270F700BAC998 /* Default@2x.png */; };
 		8EC103CB16F270F700BAC998 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC103CA16F270F700BAC998 /* Default-568h@2x.png */; };
 		8EC103CE16F270F700BAC998 /* RVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC103CD16F270F700BAC998 /* RVViewController.m */; };
-		8EC103D116F270F700BAC998 /* RVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC103CF16F270F700BAC998 /* RVViewController.xib */; };
 		8EC1045616F277DA00BAC998 /* RVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1045516F277DA00BAC998 /* RVCollectionViewCell.m */; };
 		8EC1045A16F27AE500BAC998 /* RVCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1045916F27AE500BAC998 /* RVCollectionViewLayout.m */; };
 		8EC1045D16F2953F00BAC998 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC1045C16F2953F00BAC998 /* QuartzCore.framework */; };
@@ -37,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BDE14762656580A0063D824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC103B116F270F700BAC998 /* RouletteViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouletteViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC103B416F270F700BAC998 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8EC103B616F270F700BAC998 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,7 +53,6 @@
 		8EC103CA16F270F700BAC998 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8EC103CC16F270F700BAC998 /* RVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVViewController.h; sourceTree = "<group>"; };
 		8EC103CD16F270F700BAC998 /* RVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RVViewController.m; sourceTree = "<group>"; };
-		8EC103D016F270F700BAC998 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RVViewController.xib; sourceTree = "<group>"; };
 		8EC1045416F277DA00BAC998 /* RVCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVCollectionViewCell.h; sourceTree = "<group>"; };
 		8EC1045516F277DA00BAC998 /* RVCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVCollectionViewCell.m; sourceTree = "<group>"; };
 		8EC1045816F27AE500BAC998 /* RVCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				8EC1045516F277DA00BAC998 /* RVCollectionViewCell.m */,
 				8EC1045816F27AE500BAC998 /* RVCollectionViewLayout.h */,
 				8EC1045916F27AE500BAC998 /* RVCollectionViewLayout.m */,
-				8EC103CF16F270F700BAC998 /* RVViewController.xib */,
+				5BDE14762656580A0063D824 /* Assets.xcassets */,
 				8EC103BB16F270F700BAC998 /* Supporting Files */,
 			);
 			path = RouletteViewDemo;
@@ -203,6 +203,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8EC103A816F270F700BAC998;
@@ -223,8 +224,8 @@
 				8EC103BF16F270F700BAC998 /* InfoPlist.strings in Resources */,
 				8EC103C716F270F700BAC998 /* Default.png in Resources */,
 				8EC103C916F270F700BAC998 /* Default@2x.png in Resources */,
+				5BDE14772656580A0063D824 /* Assets.xcassets in Resources */,
 				8EC103CB16F270F700BAC998 /* Default-568h@2x.png in Resources */,
-				8EC103D116F270F700BAC998 /* RVViewController.xib in Resources */,
 				8ECAB21716F5512D002B90C2 /* 10.png in Resources */,
 				8ECAB21816F5512D002B90C2 /* 11.png in Resources */,
 				8ECAB21916F5512D002B90C2 /* 12.png in Resources */,
@@ -265,14 +266,6 @@
 				8EC103BE16F270F700BAC998 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8EC103CF16F270F700BAC998 /* RVViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EC103D016F270F700BAC998 /* en */,
-			);
-			name = RVViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -337,6 +330,7 @@
 		8EC103D516F270F700BAC998 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RouletteViewDemo/RouletteViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "RouletteViewDemo/RouletteViewDemo-Info.plist";
@@ -348,6 +342,7 @@
 		8EC103D616F270F700BAC998 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RouletteViewDemo/RouletteViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "RouletteViewDemo/RouletteViewDemo-Info.plist";
